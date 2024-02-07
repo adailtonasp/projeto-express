@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastrar produto</h1>
+    <form action="/produtos" method="post" enctype="multipart/form-data"> 
+        <label for="nome">nome</label>
+        <input type="text" name="nome">
+        <br>
+        <label for="categoria">categoria</label>
+        <input type="text" name="categoria">
+        <br>
+        <label for="foto">foto</label>
+        <input type="file" name="foto">
+        <br>
+        <br>
+        <input type="submit" value="cadastrar" accept="image/*">
+    </form>
+    <br>
+    <br>
+    <hr>
+    <h1>Remover produto</h1>
+    <form action="/produtos/deletar" method="post">
+        <label for="id">id</label>
+        <input type="text" name="id">
+        <br>
+        <br>
+        <input type="submit" value="remover">
+        
+    </form>
+    <br>
+    <br>
+    <hr>
+    <a href="/usuarios/logoff">loggof</a>
+</body>
+</html>
